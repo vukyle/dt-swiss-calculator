@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="sass">
-    @import '../css/_styles.sass'
+    @import '../css/index.sass'
     .intro
         &__container
             width: 70%

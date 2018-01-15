@@ -2,7 +2,7 @@
       <div>
         <app-header></app-header>
         <app-intro></app-intro>
-        <div class='wheel-container'>
+        <div class='main-container'>
             <app-wheel v-bind:title="frontWheel.title"></app-wheel>
             <app-wheel title="Rear Wheel"></app-wheel>
         </div>
@@ -31,5 +31,10 @@ export default {
 
 <style lang="sass">
     $red: #da110a
-
+    .main-container
+        display: flex
+        justify-content: space-between
+        width: 70%
+        margin: 0 auto
+        
 </style>

@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start": "npm run build",
-    "build": "webpack-dev-server",
+    "build": "webpack-dev-server --open",
     "build:prod": "webpack -p"
   },
   "dependencies": {
