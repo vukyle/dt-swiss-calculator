@@ -18,7 +18,9 @@
             <input type="text" name="erd" id="erd" value="">
         </div>
 
-        <div>
+        <div
+            class="input"
+            data-placeholder="g">
             <label for="weight">WEIGHT</label>
             <input type="text" name="weight" id="weight">
         </div>
@@ -35,9 +37,6 @@ export default {
 
 <style lang="sass">
     @import '../css/index.sass'
-    label
-        display: block
-        font-size: .9em
     .wrapper
         width: 95%
         margin: 0 auto

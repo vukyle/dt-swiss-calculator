@@ -4,7 +4,7 @@
         <app-intro></app-intro>
         <div class='main-container'>
             <app-wheel v-bind:title="frontWheel.title"></app-wheel>
-            <app-wheel title="Rear Wheel"></app-wheel>
+            <app-wheel v-bind:title="rearWheel.title"></app-wheel>
         </div>
       </div>
 </template>
@@ -18,6 +18,9 @@ export default {
         return {
             frontWheel: {
                 title: 'Front Wheel'
+            },
+            rearWheel: {
+                title: 'Rear Wheel'
             }
         }
     },
@@ -36,5 +39,5 @@ export default {
         justify-content: space-between
         width: 70%
         margin: 0 auto
-        
+
 </style>

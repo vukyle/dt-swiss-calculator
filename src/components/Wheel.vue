@@ -3,12 +3,16 @@
           <div class="wheel-header spacing bg--grey">
               {{ title }}
           </div>
-          <appRim class="bg--grey"></appRim>
+          <app-rim class="bg--grey spacing"></app-rim>
+          <app-hub class="bg--grey spacing"></app-hub>
+          <app-spoke class="bg--grey"></app-spoke>
       </div>
 </template>
 
 <script>
-import Rim from './Rim';
+    import Rim from './Rim';
+    import Hub from './Hub';
+    import Spoke from './Spoke';
 
 export default {
     props: {
@@ -18,7 +22,9 @@ export default {
         }
     },
     components: {
-        appRim: Rim
+        appRim: Rim,
+        appHub: Hub,
+        appSpoke: Spoke
     }
 }
 </script>
@@ -42,5 +48,18 @@ export default {
         padding: 5px
         border: none
         border-radius: 50px
+    label
+        display: block
+        font-size: .7em
+    //styles the text inputs
+    .input
+        width: 48%
+        position: relative
+        &[data-placeholder]::after
+            content: attr(data-placeholder)
+            position: absolute
+            bottom: 0px
+            right: 20px
+            color: #777777
 
 </style>
