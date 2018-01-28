@@ -5,7 +5,9 @@
           </div>
           <app-rim class="bg--grey spacing"></app-rim>
           <app-hub class="bg--grey spacing"></app-hub>
-          <app-spoke class="bg--grey"></app-spoke>
+          <app-spoke class="bg--grey spacing"></app-spoke>
+          <app-nipple class="bg--grey spacing"></app-nipple>
+          <app-spoke-length class="bg--grey"></app-spoke-length>
       </div>
 </template>
 
@@ -13,6 +15,8 @@
     import Rim from './Rim';
     import Hub from './Hub';
     import Spoke from './Spoke';
+    import Nipple from './Nipple';
+    import SpokeLength from './SpokeLength';
 
 export default {
     props: {
@@ -24,7 +28,9 @@ export default {
     components: {
         appRim: Rim,
         appHub: Hub,
-        appSpoke: Spoke
+        appSpoke: Spoke,
+        appNipple: Nipple,
+        appSpokeLength: SpokeLength
     }
 }
 </script>
@@ -53,7 +59,7 @@ export default {
         font-size: .7em
     //styles the text inputs
     .input
-        width: 48%
+        //width: 25%
         position: relative
         &[data-placeholder]::after
             content: attr(data-placeholder)
