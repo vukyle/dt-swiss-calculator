@@ -7,7 +7,6 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    // publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
@@ -63,8 +62,8 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-            test: /\.html$/,
-            use: ['html-loader']
+        test: /\.html$/,
+        use: ['html-loader']
         },
       {
         test: /\.(png|jpg|gif|svg)$/,
